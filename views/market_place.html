@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"-->
+</head>
+<body class="b b2">
+    <!-- Bootstrap Navbar -->
+    <nav class="nav fixed-top">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <img src="/images/logo.svg" alt="logo" class="logo-img">
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <ul class="nav-list .navbar-nav">
+          <li><a href="/">About Us</a></li>
+          <li><a href="/market_place">Market Place</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="container m_place_main">
+
+      
+      <div class="col-lg-6 container m_place">
+        <img src="/images/ss.png" alt="Image" class="image" style="align-items: center;">
+    </div>
+      <div class="form-bg container col-lg-6 rs">
+
+        <h3 class="htext"> Welcome to House of Greens </h3>
+        <p class="ptext">Join the waitlist to get weekly update on the greens that are growing in the farm.</p>
+
+        <div class="form">
+            <input placeholder="Name" maxlength="50" name="form-name" type="text">
+            <input placeholder="E-mail" maxlength="50" name="form-email" type="text">
+            <input placeholder="Phone Number" maxlength="9" name="form-phone" type="text">
+            <input placeholder="City" maxlength="50" name="form-city" type="text">
+            
+
+            <h2>Join the Wait-List</h2>
+            <p class="ptext">Refer a friend and claim a free box</p>
+        </div>
+      </div>
+</div>
+        <script>
+          function activeBox()
+{
+    if ( $('.form label .box').hasClass('active') )
+    {
+        $('.form label .box').removeClass('active')
+    }
+    else
+    {
+        $('.form label .box').addClass('active')
+    }
+}
+
+$('.form label .box').on('click', function(){
+    activeBox();
+})
+
+$('.form label sup').on('click', function(){
+    activeBox();
+})
+        </script>
+</body>
+</html>
